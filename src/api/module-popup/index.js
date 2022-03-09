@@ -1,8 +1,9 @@
 import axios from 'axios';
-import API_URL from '../const';
+import { API_URL } from '../const';
 
 export async function sendForm(formData) {
-  const result = await axios.post(API_URL, {
+  const endpoint = `${API_URL}` || 'http://localhost:3000/';
+  const result = await axios.post(`${endpoint}/ajax/send.php`, {
     data: formData,
   });
   return result.data;
@@ -10,4 +11,4 @@ export async function sendForm(formData) {
 
 export default {
   sendForm,
-}
+};

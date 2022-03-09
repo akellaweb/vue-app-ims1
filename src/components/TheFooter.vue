@@ -6,7 +6,6 @@
       </div>
     </div>
   </div>
-  <div class="layer-bg"></div>
 </template>
 
 <script>

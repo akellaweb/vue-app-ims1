@@ -1,3 +1,4 @@
+// import { inject } from 'vue';
 import { fetchDBBenefits } from './module-benefit';
 import { fetchDBCatalog } from './module-catalog';
 import { fetchDBPartners } from './module-partner';

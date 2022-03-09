@@ -1,11 +1,6 @@
 <template>
-  <div class="layer-bg" :style="{
-    display: visible ? 'block' : 'none'
-  }"></div>
-  <div class="popup" :style="{
-    display: visible ? 'block' : 'none'
-  }"
-  >
+  <div class="layer-bg animate__fadeIn" v-if="visible"></div>
+  <div class="popup animate__fadeIn" v-if="visible">
     <div class="popup-content">
       <div class="pp-close" @click="hidePopup"><i class="icofont-close-line-circled"></i></div>
       <div class="pp-title">Заказать звонок</div>
@@ -40,6 +35,7 @@
 </template>
 
 <script>
+import 'animate.css';
 import { mapActions, mapGetters } from 'vuex';
 
 export default {
@@ -64,3 +60,25 @@ export default {
   },
 };
 </script>
+
+<style>
+.fade-enter-active {
+  animation: fade-in .5s;
+}
+.fade-leave-active {
+  animation: fade-in .5s reverse;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    display: none
+  }
+  50% {
+    opacity: .5
+  }
+  100% {
+    opacity: 1;
+    display: block
+  }
+}
+</style>

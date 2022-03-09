@@ -2,9 +2,9 @@
   <div class="col-md-3">
     <div class="ft-item">
       <div class="ft-icon"><i
-        :class="`icofont-${data.DISPLAY_PROPERTIES.ICON.DISPLAY_VALUE}`"></i>
+        :class="`icofont-${ item.DISPLAY_PROPERTIES.ICON.DISPLAY_VALUE }`"></i>
       </div>
-      <div class="ft-title"><h3 v-html="data.NAME"></h3></div>
+      <div class="ft-title"><h3 v-html="item.NAME"></h3></div>
       <div class="ft-text"></div>
     </div>
   </div>
@@ -14,7 +14,7 @@
 export default {
   name: 'BenefitCard',
   props: {
-    data: {
+    item: {
       type: Object,
       required: true,
     },

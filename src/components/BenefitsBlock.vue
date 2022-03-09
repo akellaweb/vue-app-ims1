@@ -4,7 +4,7 @@
       <div class="row">
         <BenefitCard v-for="(item, idx) of items"
              :key="idx"
-             :data="item"
+             :item="item"
         />
       </div>
     </div>

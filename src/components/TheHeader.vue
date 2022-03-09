@@ -10,7 +10,7 @@
         </div>
         <div class="col-md-3 hidden-xs">
           <div class="order-call">
-            <a @click="showPopup" class="btn-site order-call">Заказать звонок</a>
+            <a @click="togglePopup" class="btn-site order-call">Заказать звонок</a>
           </div>
         </div>
         <div class="col-md-3 hidden-md hidden-lg hidden-sm visible-xs">
@@ -53,6 +53,10 @@ export default {
   methods: {
     showPopup() {
       this.setVisibility(true);
+    },
+    togglePopup() {
+      console.log(this.status);
+      this.setVisibility(!this.status);
     },
     ...mapActions({
       setVisibility: 'popup/setVisible',

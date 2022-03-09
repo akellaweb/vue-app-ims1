@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-6  col-xs-12">
           <div class="tab-img">
-            <img v-if="item.PREVIEW_PICTURE" :src="`http://i-ms.ru/${item.PREVIEW_PICTURE.SRC}`" alt="" />
+            <img v-if="item.PREVIEW_PICTURE" :src="`https://i-ms.ru/${item.PREVIEW_PICTURE.SRC}`" alt="" />
           </div>
         </div>
         <div class="col-md-6  col-xs-12">

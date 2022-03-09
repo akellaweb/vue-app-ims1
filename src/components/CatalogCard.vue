@@ -8,7 +8,7 @@
       }"
     >
       <span class="t-icon"><i
-        :class="`icofont-${item.DISPLAY_PROPERTIES.ICON.DISPLAY_VALUE}`"></i></span>
+        :class="`icofont-${ item.DISPLAY_PROPERTIES.ICON.DISPLAY_VALUE }`"></i></span>
       <br>
       <span class="t-name">{{ item.NAME }}</span>
     </a>
