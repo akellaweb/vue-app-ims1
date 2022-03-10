@@ -4,8 +4,10 @@
       <div class="row">
         <div class="col-md-12">
           <div class="section-head">
-            <h2 class="section-title" v-html="arResult.PAGER_TITLE"></h2>
-            <div class="section-subtitle" v-html="arResult.DESCRIPTION"></div>
+            <h2 class="section-title">Доставка и оплата</h2>
+            <div class="section-subtitle">
+              Мы позаботились о том, чтобы наши клиенты имели возможность
+              оплатить и получить свой товар различными способами.</div>
           </div>
         </div>
       </div>
